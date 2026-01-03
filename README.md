@@ -10,33 +10,28 @@ This repository hosts **VALACT-15K**, a dataset and code for studying value alig
 
 The repository allows you to reproduce the dataset preparation, LLM experiments, and analysis described in our work.
 
----
-
 ## Dataset Notes & Copyright Disclaimer
 
 ⚠️ **Important:**  
-Due to copyright and privacy considerations, **all** scenario texts used in the paper are masked in this repository.
+Due to copyright and privacy considerations, **ALL** scenario texts used in the paper are masked in this repository.
 
 - In the released files, each scenario is replaced with a placeholder (e.g., `Masked_Scenario`)
 - Only the URL corresponding to each scenario is retained
 
 You can find the original scenario metadata in: `reddit_category_sampled_cleaned.csv`. This file contains the filtered Reddit posts used to construct the dataset, including their URLs and category annotations.
 
----
 
 ## Repository Structure & Usage
 
-### 1. Scenario Filtering
+### 📝 1. Scenario Filtering
 
 To reproduce the scenario selection process, see: `ScenarioFilter.ipynb`. This notebook provides the filtering criteria and the prompt templates used during filtering
 
-### 2. Action Generation
+### ⚙️ 2. Action Generation
 
 For generating value-aligned actions for each scenario, refer to: `ActionGeneration.ipynb` This notebook includes the generation prompts used for two LLMs and methods for merging, shuffling, and sampling actions
 
----
-
-### 3. Main Experiment
+### 🚀 3. Main Experiment
 
 To run the main experiments, use: `APICall.ipynb`
 
@@ -48,9 +43,7 @@ This notebook handles:
 
 All raw outputs from the models are saved in: `Results/`
 
----
-
-### 4. Analysis
+### 📊 4. Analysis 
 
 To analyze model outputs and compute value distributions and correlations, use: `Analysis.ipynb`. This notebook parses the raw outputs and performs all statistical analyses reported in the paper.
 
